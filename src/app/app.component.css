@@ -1,0 +1,25 @@
+.bg-light {
+    background-color: #da9ca7c7!important;
+}
+.navbar {
+    height: 75px;
+}
+
+.navbar-nav {
+    margin-left: 55%;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    font-size: larger;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    margin-left: 6%;
+}

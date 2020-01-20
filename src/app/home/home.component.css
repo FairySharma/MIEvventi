@@ -1,0 +1,21 @@
+.jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+    background-color: white;
+}
+.card{
+    border: none;
+    width: 22rem;
+}
+.card-body {
+    text-align: center;
+}
+.Welcomeh3{
+    text-align: center;
+   
+}
+.welcomep{
+    text-align: center;
+    font-size: large;
+}
