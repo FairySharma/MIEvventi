@@ -1,1 +1,31 @@
-<p>gallery works!</p>
+<div class="container">    
+  <div class="row"></div>
+    <div class="row" style="margin-top:10px;margin-bottom: 10px;">      
+      <div class="col-sm-3">    
+        <button class="btn btn-success" (click)="filterBy='all'">All IMAGES</button>    
+      </div>    
+      <div class="col-sm-3">    
+        <button class="btn btn-success" (click)="filterBy='wedding'">WEDDINGS</button>    
+      </div>    
+      <div class="col-sm-3">    
+        <button class="btn btn-success" (click)="filterBy='social'">SOCIAL ENGAGEMENTS</button>    
+      </div>    
+      <div class="col-sm-3">    
+        <button class="btn btn-success" (click)="filterBy='cooperate'">CORPORATE EVENTS</button>    
+      </div>    
+         
+    </div>    
+    <div class="row">   
+      <div class="col-md-12">
+        <ul>    
+          <li *ngFor="let img of (allImages | filterimages:filterBy)">    
+            <a [routerLink]="['/image', img.id]">    
+              <img src="{{img.url}}" class="img" width="240" height="170">    
+            </a>    
+          </li>    
+        </ul> 
+      </div> 
+         
+    </div>    
+  </div>    
+  
